@@ -6,7 +6,8 @@
     "paths": {
       "@app/*":["./src/app/*"],
       "@routes/*":["./src/app/routes/*"],
-      "@scss/*":["./src/scss/*"]
+      "@scss/*":["./src/scss/*"],
+      "@img/*":["./src/assets/img/*"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

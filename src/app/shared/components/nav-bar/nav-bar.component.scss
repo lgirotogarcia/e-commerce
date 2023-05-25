@@ -4,7 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.5rem;
 
   .searchBar{
     display: flex;
@@ -18,27 +20,35 @@
       border-radius: 10px;
       display: flex;
       text-align: center;
+      color: basics.$primaryText;
+      background-color: basics.$background;
     }
 
   }
 
   .categoryList {
     display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 
+    li:hover {
+      background-color: #FFF799;
+    }
     li {
-      padding: 1.5rem;
-      padding-top: 0;
-      position: sticky;
+      display:flex;
+      padding: 1rem;
       list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: basics.$primaryText;
+      }
+
 
       .subcategoryList {
         display: none;
       }
-
-      a:hover {
-        background-color: #c4b701;
-      }
-
     }
   }
 }
